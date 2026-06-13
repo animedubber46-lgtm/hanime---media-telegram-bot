@@ -1,0 +1,6 @@
+{
+  "name": "Hanime & Media Telegram Bot",
+  "description": "Premium multi-tier Telegram bot featuring automated media scraping, TMDB metadata indexing, link shortening with normal and token methods, deep-linked referrals, Stars payment flow, and admin broadcast/moderation dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

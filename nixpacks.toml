@@ -1,0 +1,29 @@
+# nixpacks.toml for Railway compatibility
+
+[providers]
+providers = ["node", "python"]
+
+[phases.setup]
+nixPkgs = ["nodejs", "python3", "ffmpeg"]
+aptPkgs = [
+  "libgbm-dev",
+  "libnss3",
+  "libasound2",
+  "libatk-bridge2.0-0",
+  "libgtk-3-0"
+]
+
+[phases.install]
+cmds = [
+  "npm install",
+  "pip install -r requirements.txt",
+  "python3 -m playwright install chromium"
+]
+
+[phases.build]
+cmds = [
+  "npm run build"
+]
+
+[start]
+cmd = "npm run start"
